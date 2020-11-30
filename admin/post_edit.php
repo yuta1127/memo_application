@@ -99,7 +99,7 @@ if (isset($request["send"]) && $page_error == "") {
     </p>
 <?php if ($mode == "change") {?>
     <p>
-      記事ID[<?php echo he($form["post_id"]); ?>]を修正しています
+      記事ID[<?php echo he($form["post_title"]); ?>]を修正しました
     </p>
 <?php }?>
     <form action="post_edit.php" method="post">

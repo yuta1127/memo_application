@@ -15,8 +15,8 @@
 
   </header>
   <main>
-    <section id='top' class="contents_butan">
-      <div class="contents"><img class='main_icon' src="img/icon_business_man01.png" alt="">
+    <section id='top' class="contents_button">
+      <div class="contents"><img class='main_icon' src="img/icon_business_man01.png" alt="トップ">
         <h1>todoメモ </h1>
         <p>メモを記録するアプリ</p>
         <div class="contents1">
@@ -24,7 +24,7 @@
             <p>ログイン</p>
          </a>
         <div class="contents2">
-          <a href="memo_list.php">
+          <a href="post_list.php">
             <p>記事管理</p>
           </a>
         </div>
@@ -40,7 +40,7 @@
     padding: 0;
   }
 main{
-  height: 800px;
+  height: 600px;
 }
   #top {
 
