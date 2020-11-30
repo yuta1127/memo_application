@@ -13,7 +13,7 @@ try {
 ?>
 <?php $page_title = "記事管理";?>
 <?php require "header.php";?>
-    <a href="post_edit.php">記事を追加する</a>
+    <a href="post_edit.php">記事を新規作成</a>
     <hr>
 <?php if ($rows_post) {?>
     <table border="1" width="100%">
