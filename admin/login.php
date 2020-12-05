@@ -21,12 +21,12 @@ if (isset($request["send"])) {
 // ログイン実行
 if (isset($request["send"]) && $page_error == "") {
     try {
-        // まずはログインIDでSELECTする
+        // ログインIDでSELECT
         $stmt = $db->prepare("SELECT * FROM users WHERE user_loginid = ? LIMIT 1");
         $stmt->execute(array($request["user_loginid"])); // クエリの実行
         $row_user = $stmt->fetch(PDO::FETCH_ASSOC); // SELECT結果を配列に格納
         if ($row_user) {
-            // 該当のuserレコードがあったら、パスワードを照合する
+            // 該当のuserレコードがあったら、パスワードを照合
             if (sha1($request["user_password"]) == $row_user["user_password"]) {
                 $_SESSION["user_id"] = $row_user["user_id"];
                 header("Location: index.php");
@@ -48,14 +48,15 @@ if (isset($request["send"]) && $page_error == "") {
     <form action="login.php" method="post">
       <div>
         ログインID<br>
-        <input type="text" name="user_loginid" size="30" value="">
+        <input type="text" name="user_loginid" size="30" value="">　　
       </div>
       <div>
         パスワード<br>
         <input type="password" name="user_password" size="30" value="">
       </div>
       <div>
-        <input type="submit" name="send" value="ログインする">
+        <input type="submit" class="btn btn-primary" value="ログインする">
       </div>
     </form>
-<?php require "footer.php";?>
+
+
