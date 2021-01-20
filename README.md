@@ -16,8 +16,7 @@ PHPの基礎定着を再確認するため、フルスクラッチで一覧・�
 
 # 開発環境
 
-PHP 7.3.11  
-JavaScript  
+PHP 7.3.11   
 HTML  
 CSS 
 
